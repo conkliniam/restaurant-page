@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Playwrite";
+  src: url("PlaywriteNZ-VariableFont_wght.ttf") format("opentype");
+}
+
+:root {
+  --header-color: rgb(146, 137, 0);
+  --body-color: rgb(161, 0, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playwrite", Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: var(--body-color);
+}
+
+.logo {
+  width: 100px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  padding: 20px 20px 0 20px;
+  border-bottom: 5px solid white;
+  background-color: var(--header-color);
+}
+
+header > .left {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+nav > button {
+  border: none;
+  color: white;
+  border: 5px solid white;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: -5px;
+  background-color: var(--body-color);
+  font-family: "Playwrite", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+nav > button:hover {
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  gap: 20px;
+}
+
+#content {
+  text-align: center;
+}
+
+.photo > img {
+  height: 500px;
+  border-radius: 10px;
+  border: 10px ridge var(--header-color);
+}
+
+.photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+
+.current-button {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+.home-attribution > a {
+  color: rgb(227, 166, 255);
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin: 20px;
+  padding: 10px;
+  gap: 25px;
+  background-color: rgb(211, 186, 154);
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+}
+
+.menu-item img {
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.menu-item > .right {
+  text-align: left;
+  color: black;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact > .title {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.contact > .value {
+  text-align: left;
+}
